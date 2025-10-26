@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:layout_marginBottom="240dp"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:elevation="6dp">
+
+    <!-- Header clickeable para expandir/colapsar -->
+    <LinearLayout
+        android:id="@+id/headerExpandible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="12dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground">
+
+        <TextView
+            android:id="@+id/textTituloCategoria"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cafeterías"
+            android:textSize="16sp"
+            android:textColor="#43368a"
+            android:fontFamily="sans-serif-medium"/>
+
+        <TextView
+            android:id="@+id/textExpandirColapsar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="▼"
+            android:textSize="18sp"
+            android:textColor="#43368a"
+            android:layout_marginStart="8dp"/>
+
+    </LinearLayout>
+
+    <!-- Contenido expandible -->
+    <LinearLayout
+        android:id="@+id/contenidoExpandible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ListView
+            android:id="@+id/listViewLugares"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#ffffff"
+            android:divider="#e0e0e0"
+            android:dividerHeight="1dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -19,6 +19,6 @@ public class SplashActivity extends AppCompatActivity {
                 startActivity(i);
                 finish(); // para que no se pueda volver al splash
             }
-        }, 2500);
+        }, 2000);
     }
 }

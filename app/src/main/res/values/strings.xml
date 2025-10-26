@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">ap_proGeolocalizacion_26oct</string>
     <string name="api_key">AIzaSyDiHCfCjzf-C8A8ZaYPknAQEoJ_WYTxhhk</string>
+    
+    <!-- Tipos de lugares -->
+    <string-array name="tipos_lugares">
+        <item>Cafetería</item>
+        <item>Restaurante</item>
+        <item>Gimnasio</item>
+        <item>Supermercado</item>
+        <item>Casa</item>
+        <item>Cine</item>
+    </string-array>
 </resources>

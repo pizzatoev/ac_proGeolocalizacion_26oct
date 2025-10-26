@@ -1,20 +1,21 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- Mapa debajo -->
     <fragment
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_height="match_parent"/>
+
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="240dp"
+        android:layout_gravity="bottom"
         android:orientation="vertical"
-        android:background="#ffffff">
+        android:background="@drawable/background_botones_redondeado">
 
         <TextView
             android:layout_marginTop="15dp"
@@ -91,7 +92,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Pollos"
+                        android:text="Restaurantes"
                         android:textColor="#43368a"
                         android:textSize="12sp"
                         android:layout_marginTop="4dp"
@@ -204,4 +205,13 @@
 
     </LinearLayout>
 
-</LinearLayout>
+    <!-- ListView desplegable para mostrar lugares -->
+    <include
+        android:id="@+id/layoutListaLugares"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        layout="@layout/layout_lista_lugares"
+        android:visibility="gone"/>
+
+</FrameLayout>

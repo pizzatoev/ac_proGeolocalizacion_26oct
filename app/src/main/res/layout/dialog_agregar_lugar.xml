@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar Nuevo Lugar"
+        android:textSize="20sp"
+        android:textColor="#43368a"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Nombre del lugar -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre del lugar:"
+        android:textSize="14sp"
+        android:textColor="#43368a"
+        android:layout_marginBottom="5dp"/>
+
+    <EditText
+        android:id="@+id/editNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ej: Biancaflor"
+        android:textColor="#333333"
+        android:textColorHint="#999999"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:layout_marginBottom="15dp"/>
+
+    <!-- Tipo de lugar -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo de lugar:"
+        android:textSize="14sp"
+        android:textColor="#43368a"
+        android:layout_marginBottom="5dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerTipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:layout_marginBottom="15dp"/>
+
+    <!-- Calificación -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calificación (1-10):"
+        android:textSize="14sp"
+        android:textColor="#43368a"
+        android:layout_marginBottom="5dp"/>
+
+    <SeekBar
+        android:id="@+id/seekBarCalificacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="9"
+        android:progress="4"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/textCalificacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⭐ 5/10"
+        android:textSize="16sp"
+        android:textColor="#43368a"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="15dp"/>
+
+    <!-- Comentario -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comentario:"
+        android:textSize="14sp"
+        android:textColor="#43368a"
+        android:layout_marginBottom="5dp"/>
+
+    <EditText
+        android:id="@+id/editComentario"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Comentario del lugar..."
+        android:textColor="#333333"
+        android:textColorHint="#999999"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Botones -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_cancelar_background"
+            android:layout_marginEnd="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_guardar_background"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
