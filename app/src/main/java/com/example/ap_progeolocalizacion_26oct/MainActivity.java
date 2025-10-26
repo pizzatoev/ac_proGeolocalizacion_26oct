@@ -278,7 +278,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         Button btnCancelar = dialogView.findViewById(R.id.btnCancelar);
         Button btnGuardar = dialogView.findViewById(R.id.btnGuardar);
         
-        //spinner tipos
+        //spinner de los tipos
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.tipos_lugares, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -334,7 +334,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
     
     private void agregarNuevoLugar(Lugar lugar) {
-        // Determinar a qué lista agregar según el tipo
+        // determina a qué lista agregar según el tipo
         String tipo = lugar.getTipo().toLowerCase();
         
         if (tipo.contains("cafetería") || tipo.contains("cafe")) {
@@ -378,10 +378,9 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
 
     private void mostrarSoloCategoria(String categoria) {
-        // Ocultar todos los marcadores primero
         ocultarTodosLosMarcadores();
         
-        // Mostrar solo los marcadores de la categoría seleccionada
+        // si selecciona se muestra solo que se selcciono pe
         switch (categoria) {
             case "cafe":
                 mostrarMarcadores(cafeMarkers);
@@ -432,8 +431,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         contenidoExpandible.setVisibility(View.VISIBLE);
         textExpandirColapsar.setText("▼");
         estaExpandido = true;
-        
-        // Configurar click listener para los items del ListView
+
         listViewLugares.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -451,7 +449,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             textExpandirColapsar.setText("▶");
             estaExpandido = false;
         } else {
-            // Expandir
+            // expander
             contenidoExpandible.setVisibility(View.VISIBLE);
             textExpandirColapsar.setText("▼");
             estaExpandido = true;
@@ -460,7 +458,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     
     private void mostrarDialogoConfirmarBorrado(Lugar lugar, int position) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Confirmar Borrado")
+        builder.setTitle("Confirmar")
                 .setMessage("¿Estás seguro de que quieres borrar '" + lugar.getNombre() + "'?")
                 .setPositiveButton("Borrar", new DialogInterface.OnClickListener() {
                     @Override
@@ -500,8 +498,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             cineLugares.remove(lugar);
             cineMarkers.remove(position).remove();
         }
-        
-        // Actualizar el ListView
+
         adapter.notifyDataSetChanged();
         
         Toast.makeText(this, "Lugar borrado exitosamente", Toast.LENGTH_SHORT).show();

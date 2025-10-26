@@ -17,7 +17,7 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
                 Intent i = new Intent(SplashActivity.this, MainActivity.class);
                 startActivity(i);
-                finish(); // para que no se pueda volver al splash
+                finish();
             }
         }, 2000);
     }
