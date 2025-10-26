@@ -54,10 +54,10 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
    
     private Button btnCafe, btnPollo, btnGym, btnMerca, btnPerso, btnCine;
     
-    // Variable para almacenar la posición del clic
+    // almacena la posición del clic
     private LatLng posicionClic;
     
-    // Variables para el ListView desplegable
+    //  desplegable
     private View layoutListaLugares;
     private ListView listViewLugares;
     private TextView textTituloCategoria;
@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
     
     private void inicializarLugares() {
-        // cafeterias
+
         cafeLugares.add(new Lugar("La Condesa", "Cafetería", -17.727268079582213, -63.167935340590816, 9, "Excelente café y ambiente acogedor"));
         cafeLugares.add(new Lugar("Panpino", "Cafetería", -17.748196178360832, -63.17591759461908, 8, "Buenos pasteles y café"));
         cafeLugares.add(new Lugar("Larome", "Cafetería", -17.751537809998183, -63.17084333030127, 7, "Café artesanal de calidad"));
@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         cafeLugares.add(new Lugar("Cafe La Pradera", "Cafetería", -17.70074244524683, -63.17729155762567, 8, "Ubicación perfecta, buen servicio"));
         cafeLugares.add(new Lugar("Fábrica", "Cafetería", -17.722186899574545, -63.16288618214799, 9, "Café premium, ambiente moderno"));
         
-        // pollos
+
         polloLugares.add(new Lugar("Pollo Campeón", "Restaurante", -17.73991011056409, -63.16416883801959, 8, "Excelente pollo a la brasa"));
         polloLugares.add(new Lugar("Pollo Sakura", "Restaurante", -17.736507869410126, -63.16995804253194, 7, "Buen pollo, servicio rápido"));
         polloLugares.add(new Lugar("Pollo Kiky", "Restaurante", -17.720082348183233, -63.16318344150685, 6, "Pollo decente, precios accesibles"));
@@ -156,14 +156,13 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     public void onMapReady(GoogleMap googleMap) {
         myMap = googleMap;
 
-        // Centrar cámara en Santa Cruz
+        // centrar camara en Santa Cruz
         LatLng santaCruz = new LatLng(-17.75, -63.18);
         myMap.moveCamera(CameraUpdateFactory.newLatLngZoom(santaCruz, 12));
 
-        // Crear marcadores con calificaciones
+        //  marcadores con calificaciones
         crearMarcadoresConCalificaciones();
-        
-        // Agregar listener para clics en el mapa
+
         myMap.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
             @Override
             public void onMapClick(LatLng latLng) {
@@ -174,7 +173,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
     
     private void crearMarcadoresConCalificaciones() {
-        // ☕ CAFETERÍAS
+        // cafes
         for (Lugar lugar : cafeLugares) {
             LatLng posicion = new LatLng(lugar.getLatitud(), lugar.getLongitud());
             cafeMarkers.add(myMap.addMarker(new MarkerOptions()
@@ -189,7 +188,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     ))));
         }
 
-        // 🍗 POLLOS
+        // restaurantess
         for (Lugar lugar : polloLugares) {
             LatLng posicion = new LatLng(lugar.getLatitud(), lugar.getLongitud());
             polloMarkers.add(myMap.addMarker(new MarkerOptions()
@@ -219,7 +218,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     ))));
         }
 
-        // 🛒 MERCADOS
+        // mercados
         for (Lugar lugar : mercaLugares) {
             LatLng posicion = new LatLng(lugar.getLatitud(), lugar.getLongitud());
             mercaMarkers.add(myMap.addMarker(new MarkerOptions()
@@ -234,7 +233,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     ))));
         }
 
-        // 🏠 FAMILIARES
+        // familiares
         for (Lugar lugar : persoLugares) {
             LatLng posicion = new LatLng(lugar.getLatitud(), lugar.getLongitud());
             persoMarkers.add(myMap.addMarker(new MarkerOptions()
@@ -249,7 +248,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     ))));
         }
 
-        // 🎬 CINES
+        // cines
         for (Lugar lugar : cineLugares) {
             LatLng posicion = new LatLng(lugar.getLatitud(), lugar.getLongitud());
             cineMarkers.add(myMap.addMarker(new MarkerOptions()
@@ -270,7 +269,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         LayoutInflater inflater = getLayoutInflater();
         View dialogView = inflater.inflate(R.layout.dialog_agregar_lugar, null);
         
-        // Inicializar componentes del diálogo
+        // campos pa llenar
         EditText editNombre = dialogView.findViewById(R.id.editNombre);
         Spinner spinnerTipo = dialogView.findViewById(R.id.spinnerTipo);
         SeekBar seekBarCalificacion = dialogView.findViewById(R.id.seekBarCalificacion);
@@ -279,13 +278,13 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         Button btnCancelar = dialogView.findViewById(R.id.btnCancelar);
         Button btnGuardar = dialogView.findViewById(R.id.btnGuardar);
         
-        // Configurar spinner de tipos
+        //spinner tipos
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.tipos_lugares, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerTipo.setAdapter(adapter);
         
-        // Configurar SeekBar de calificación
+        //  SeekBar de calificación
         seekBarCalificacion.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
@@ -302,8 +301,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         
         builder.setView(dialogView);
         AlertDialog dialog = builder.create();
-        
-        // Configurar botones
+
         btnCancelar.setOnClickListener(v -> dialog.dismiss());
         
         btnGuardar.setOnClickListener(v -> {
@@ -322,10 +320,10 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 return;
             }
             
-            // Crear nuevo lugar
+
             Lugar nuevoLugar = new Lugar(nombre, tipo, posicionClic.latitude, posicionClic.longitude, calificacion, comentario);
             
-            // Agregar a la lista correspondiente y crear marcador
+            // agrega a la lista correspondiente y crea marcador
             agregarNuevoLugar(nuevoLugar);
             
             Toast.makeText(this, "Lugar agregado exitosamente", Toast.LENGTH_SHORT).show();
