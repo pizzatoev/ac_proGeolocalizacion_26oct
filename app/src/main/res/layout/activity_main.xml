@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/layoutCategorias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:padding="12dp"
+        android:elevation="4dp">
+
+        <Button
+            android:id="@+id/btnCafe"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/btn_cafe_background"
+            android:contentDescription="Cafeterías"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/btnPollo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/btn_pollo_background"
+            android:contentDescription="Pollos"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/btnGym"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/btn_gym_background"
+            android:contentDescription="Ejercicio"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/btnMerca"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/btn_merca_background"
+            android:contentDescription="Mercados"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/btnPerso"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/btn_perso_background"
+            android:contentDescription="Familiares"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/btnCine"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/btn_cine_background"
+            android:contentDescription="Cines"
+            android:layout_margin="8dp"/>
+
+    </LinearLayout>
+</LinearLayout>
