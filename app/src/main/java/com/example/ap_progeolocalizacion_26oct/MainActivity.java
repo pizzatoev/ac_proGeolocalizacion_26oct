@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .icon(BitmapDescriptorFactory.fromBitmap(
                     Bitmap.createScaledBitmap(
                         BitmapFactory.decodeResource(getResources(), R.drawable.cafeic),
-                        70, 70, false
+                        100, 100, false
                     )
                 ))));
 
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .icon(BitmapDescriptorFactory.fromBitmap(
                     Bitmap.createScaledBitmap(
                         BitmapFactory.decodeResource(getResources(), R.drawable.cafeic),
-                        70, 70, false
+                        100, 100, false
                     )
                 ))));
 
@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .icon(BitmapDescriptorFactory.fromBitmap(
                     Bitmap.createScaledBitmap(
                         BitmapFactory.decodeResource(getResources(), R.drawable.cafeic),
-                        70, 70, false
+                        100, 100, false
                     )
                 ))));
 
@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .icon(BitmapDescriptorFactory.fromBitmap(
                     Bitmap.createScaledBitmap(
                         BitmapFactory.decodeResource(getResources(), R.drawable.cafeic),
-                        70, 70, false
+                        100, 100, false
                     )
                 ))));
 
@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .icon(BitmapDescriptorFactory.fromBitmap(
                     Bitmap.createScaledBitmap(
                         BitmapFactory.decodeResource(getResources(), R.drawable.cafeic),
-                        70, 70, false
+                        100, 100, false
                     )
                 ))));
 
@@ -132,7 +132,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .icon(BitmapDescriptorFactory.fromBitmap(
                     Bitmap.createScaledBitmap(
                         BitmapFactory.decodeResource(getResources(), R.drawable.cafeic),
-                        70, 70, false
+                        100, 100, false
                     )
                 ))));
 
@@ -144,7 +144,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .icon(BitmapDescriptorFactory.fromBitmap(
                     Bitmap.createScaledBitmap(
                         BitmapFactory.decodeResource(getResources(), R.drawable.polloic),
-                        70, 70, false
+                        100, 100, false
                     )
                 ))));
 
@@ -155,7 +155,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .icon(BitmapDescriptorFactory.fromBitmap(
                     Bitmap.createScaledBitmap(
                         BitmapFactory.decodeResource(getResources(), R.drawable.polloic),
-                        70, 70, false
+                        100, 100, false
                     )
                 ))));
 
@@ -166,7 +166,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .icon(BitmapDescriptorFactory.fromBitmap(
                     Bitmap.createScaledBitmap(
                         BitmapFactory.decodeResource(getResources(), R.drawable.polloic),
-                        70, 70, false
+                        100, 100, false
                     )
                 ))));
 
@@ -177,7 +177,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .icon(BitmapDescriptorFactory.fromBitmap(
                     Bitmap.createScaledBitmap(
                         BitmapFactory.decodeResource(getResources(), R.drawable.polloic),
-                        70, 70, false
+                        100, 100, false
                     )
                 ))));
 
@@ -188,7 +188,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .icon(BitmapDescriptorFactory.fromBitmap(
                     Bitmap.createScaledBitmap(
                         BitmapFactory.decodeResource(getResources(), R.drawable.polloic),
-                        70, 70, false
+                        100, 100, false
                     )
                 ))));
 
@@ -200,7 +200,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .icon(BitmapDescriptorFactory.fromBitmap(
                     Bitmap.createScaledBitmap(
                         BitmapFactory.decodeResource(getResources(), R.drawable.gymic),
-                        70, 70, false
+                        100, 100, false
                     )
                 ))));
 
@@ -211,7 +211,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .icon(BitmapDescriptorFactory.fromBitmap(
                     Bitmap.createScaledBitmap(
                         BitmapFactory.decodeResource(getResources(), R.drawable.gymic),
-                        70, 70, false
+                        100, 100, false
                     )
                 ))));
 
@@ -223,7 +223,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .icon(BitmapDescriptorFactory.fromBitmap(
                     Bitmap.createScaledBitmap(
                         BitmapFactory.decodeResource(getResources(), R.drawable.mercaic),
-                        70, 70, false
+                        100, 100, false
                     )
                 ))));
 
@@ -234,7 +234,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .icon(BitmapDescriptorFactory.fromBitmap(
                     Bitmap.createScaledBitmap(
                         BitmapFactory.decodeResource(getResources(), R.drawable.mercaic),
-                        70, 70, false
+                        100, 100, false
                     )
                 ))));
 
@@ -245,7 +245,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .icon(BitmapDescriptorFactory.fromBitmap(
                     Bitmap.createScaledBitmap(
                         BitmapFactory.decodeResource(getResources(), R.drawable.mercaic),
-                        70, 70, false
+                        100, 100, false
                     )
                 ))));
 
@@ -257,7 +257,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .icon(BitmapDescriptorFactory.fromBitmap(
                     Bitmap.createScaledBitmap(
                         BitmapFactory.decodeResource(getResources(), R.drawable.persoic),
-                        70, 70, false
+                        100, 100, false
                     )
                 ))));
 
@@ -268,7 +268,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .icon(BitmapDescriptorFactory.fromBitmap(
                     Bitmap.createScaledBitmap(
                         BitmapFactory.decodeResource(getResources(), R.drawable.persoic),
-                        70, 70, false
+                        100, 100, false
                     )
                 ))));
 
@@ -279,7 +279,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .icon(BitmapDescriptorFactory.fromBitmap(
                     Bitmap.createScaledBitmap(
                         BitmapFactory.decodeResource(getResources(), R.drawable.persoic),
-                        70, 70, false
+                        100, 100, false
                     )
                 ))));
 
@@ -290,7 +290,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .icon(BitmapDescriptorFactory.fromBitmap(
                     Bitmap.createScaledBitmap(
                         BitmapFactory.decodeResource(getResources(), R.drawable.persoic),
-                        70, 70, false
+                        100, 100, false
                     )
                 ))));
 
@@ -301,7 +301,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .icon(BitmapDescriptorFactory.fromBitmap(
                     Bitmap.createScaledBitmap(
                         BitmapFactory.decodeResource(getResources(), R.drawable.persoic),
-                        70, 70, false
+                        100, 100, false
                     )
                 ))));
 
@@ -312,7 +312,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .icon(BitmapDescriptorFactory.fromBitmap(
                     Bitmap.createScaledBitmap(
                         BitmapFactory.decodeResource(getResources(), R.drawable.persoic),
-                        70, 70, false
+                        100, 100, false
                     )
                 ))));
 
@@ -323,7 +323,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .icon(BitmapDescriptorFactory.fromBitmap(
                     Bitmap.createScaledBitmap(
                         BitmapFactory.decodeResource(getResources(), R.drawable.persoic),
-                        70, 70, false
+                        100, 100, false
                     )
                 ))));
 
@@ -335,7 +335,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .icon(BitmapDescriptorFactory.fromBitmap(
                     Bitmap.createScaledBitmap(
                         BitmapFactory.decodeResource(getResources(), R.drawable.cineic),
-                        70, 70, false
+                        100, 100, false
                     )
                 ))));
 
@@ -346,7 +346,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .icon(BitmapDescriptorFactory.fromBitmap(
                     Bitmap.createScaledBitmap(
                         BitmapFactory.decodeResource(getResources(), R.drawable.cineic),
-                        70, 70, false
+                        100, 100, false
                     )
                 ))));
 
@@ -357,7 +357,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .icon(BitmapDescriptorFactory.fromBitmap(
                     Bitmap.createScaledBitmap(
                         BitmapFactory.decodeResource(getResources(), R.drawable.cineic),
-                        70, 70, false
+                        100, 100, false
                     )
                 ))));
     }

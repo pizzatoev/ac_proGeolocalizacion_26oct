@@ -11,61 +11,197 @@
         android:layout_weight="1"/>
 
     <LinearLayout
-        android:id="@+id/layoutCategorias"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#ffffff"
-        android:gravity="center"
-        android:padding="12dp"
-        android:elevation="4dp">
+        android:orientation="vertical"
+        android:background="#ffffff">
 
-        <Button
-            android:id="@+id/btnCafe"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:background="@drawable/btn_cafe_background"
-            android:contentDescription="Cafeterías"
-            android:layout_margin="8dp"/>
+        <TextView
+            android:layout_marginTop="15dp"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Explora"
+            android:textColor="#ffc121"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"/>
 
-        <Button
-            android:id="@+id/btnPollo"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:background="@drawable/btn_pollo_background"
-            android:contentDescription="Pollos"
-            android:layout_margin="8dp"/>
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mis Lugares"
+            android:textColor="#43368a"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginStart="10dp"/>
 
-        <Button
-            android:id="@+id/btnGym"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:background="@drawable/btn_gym_background"
-            android:contentDescription="Ejercicio"
-            android:layout_margin="8dp"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/btnMerca"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:background="@drawable/btn_merca_background"
-            android:contentDescription="Mercados"
-            android:layout_margin="8dp"/>
+            <LinearLayout
+                android:id="@+id/layoutCategorias"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:padding="12dp">
 
-        <Button
-            android:id="@+id/btnPerso"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:background="@drawable/btn_perso_background"
-            android:contentDescription="Familiares"
-            android:layout_margin="8dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="8dp">
 
-        <Button
-            android:id="@+id/btnCine"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:background="@drawable/btn_cine_background"
-            android:contentDescription="Cines"
-            android:layout_margin="8dp"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnCafe"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/btn_cafe_background"
+                        android:contentDescription="Cafeterías" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cafeterías"
+                        android:textColor="#43368a"
+                        android:textSize="12sp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="sans-serif-medium"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="8dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnPollo"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/btn_pollo_background"
+                        android:contentDescription="Pollos" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pollos"
+                        android:textColor="#43368a"
+                        android:textSize="12sp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="sans-serif-medium"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="8dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnGym"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/btn_gym_background"
+                        android:contentDescription="Ejercicio" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gimnasios"
+                        android:textColor="#43368a"
+                        android:textSize="12sp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="sans-serif-medium"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="8dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnMerca"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/btn_merca_background"
+                        android:contentDescription="Mercados" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mercados"
+                        android:textColor="#43368a"
+                        android:textSize="12sp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="sans-serif-medium"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="8dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnPerso"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/btn_perso_background"
+                        android:contentDescription="Familiares" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Familiares"
+                        android:textColor="#43368a"
+                        android:textSize="12sp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="sans-serif-medium"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="8dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnCine"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/btn_cine_background"
+                        android:contentDescription="Cines" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cines"
+                        android:textColor="#43368a"
+                        android:textSize="12sp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="sans-serif-medium"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
 
     </LinearLayout>
+
 </LinearLayout>
